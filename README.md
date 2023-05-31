@@ -1,6 +1,9 @@
 # Welcome to ReCrystal
 
-How to run ReCrystal.py?
+## What can you do with ReCrystal?
+ReCrystal allows you to iteratively refine a crystallographic data set with multipolar parameters derived from a CRYSTAL17 calculation.
+
+## How to run ReCrystal.py?
 Enter in the command line:
 
 "python3 ReCrystal.py"
