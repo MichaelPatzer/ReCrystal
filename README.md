@@ -6,7 +6,7 @@
 ReCrystal allows you to iteratively refine a crystallographic data set from a single crystal X-ray diffraction pattern with multipolar parameters that have been derived from a CRYSTAL17 calculation. 
 
 ## How to run ReCrystal.py?
-### Basically
+### How to get started
 Enter in the command line:
 
 "python3 ReCrystal.py"
@@ -18,7 +18,7 @@ Enter in the command line:
 4. XD2006 (https://www.chem.gla.ac.uk/~louis/xd-home/download.html)
 5. If you run CRYSTAL17 on a HPC, you may need subcry17 and subprop17 (Send me an e-mail if you need)
 
-### Example
+### The process of the refinement
 
 1. Structure refinement with shelxL
 Before you use ReCrystal, refine your Crystal structure with shelxL and use the **Acta** command to create a CIF.
