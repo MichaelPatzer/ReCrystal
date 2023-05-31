@@ -18,5 +18,10 @@ Enter in the command line:
 
 ### Example
 
+1. Structure refinement with shelxL
+Before you use ReCrystal, refine your Crystal structure with shelxL and use the **Acta** command to create a CIF.
+Vibrations of Hydrogens should be treated isotropic. 
 
+2. Start your refinement with ReCrystal
+For the ReCrystal refinment you only need the CIF from the shelxL refinement. It should contain the HKLF4 and coordinates.
 
