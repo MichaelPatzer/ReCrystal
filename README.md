@@ -8,7 +8,7 @@ Enter in the command line:
 
 "python3 ReCrystal.py"
 
-*You will need some additional Programs for ReCrystal.py
+*You will need some additional Programs for ReCrystal.py*
 1. python3 
 2. CRYSTAL17 Program Pcrystal and Pproperties (https://www.crystal.unito.it/)
 3. ShelxL 
