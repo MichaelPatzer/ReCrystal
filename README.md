@@ -3,7 +3,7 @@
 **LINUX-Software**
 
 ## What can you do with ReCrystal?
-ReCrystal allows you to iteratively refine a crystallographic data set from single crystal x-ray diffraction with multipolar parameters derived from a CRYSTAL17 calculation. 
+ReCrystal allows you to iteratively refine a crystallographic data set from a single crystal X-ray diffraction pattern with multipolar parameters that have been derived from a CRYSTAL17 calculation. 
 
 ## How to run ReCrystal.py?
 ### Basically
