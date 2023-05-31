@@ -1,7 +1,7 @@
 # *Re*finement with *CRYSTAL*17: ReCrystal
 
 ## What can you do with ReCrystal?
-ReCrystal allows you to iteratively refine a crystallographic data set with multipolar parameters derived from a CRYSTAL17 calculation. 
+ReCrystal allows you to iteratively refine a crystallographic data set from single crystal x-ray diffraction with multipolar parameters derived from a CRYSTAL17 calculation. 
 
 ## How to run ReCrystal.py?
 ### Basically
