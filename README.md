@@ -1,5 +1,7 @@
 # *Re*finement with *CRYSTAL*17: ReCrystal
 
+**LINUX-Software**
+
 ## What can you do with ReCrystal?
 ReCrystal allows you to iteratively refine a crystallographic data set from single crystal x-ray diffraction with multipolar parameters derived from a CRYSTAL17 calculation. 
 
@@ -24,4 +26,23 @@ Vibrations of Hydrogens should be treated isotropic.
 
 2. Start your refinement with ReCrystal
 For the ReCrystal refinment you only need the CIF from the shelxL refinement. It should contain the HKLF4 and coordinates.
+An exmaple how the CIF should look like is given in the Examples-Folder!
+
+Please ensure that all Programms are installed on the Computer (shelxL, Pcrystal, Pproperties, XD2006)
+
+3. Start **ReCrystal.py** as described with python 3 ("python3 ReCrystal.py")
+The Program will ask you for INPUT data!
+- Name of the CIF
+- Basis-Set for CRYSTAL calculation
+- DFT functional
+- SHRINK factor
+- Maximum number of refinement cycles
+- Number of CPU 
+
+4. ReCrystal will perform the Refinement on its own. You do not have to do anything, BUT sometimes there are some issues...
+
+5. After refinement you can analyse all Files!
+
+Have FUN and GOOD LUCK for your refinement and charge density analysis!
+
 
