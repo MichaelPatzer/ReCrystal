@@ -1,4 +1,4 @@
-# _Re_finement with _CRYSTAL_17: ReCrystal
+# *Re*finement with *CRYSTAL*17: ReCrystal
 
 ## What can you do with ReCrystal?
 ReCrystal allows you to iteratively refine a crystallographic data set with multipolar parameters derived from a CRYSTAL17 calculation. 
