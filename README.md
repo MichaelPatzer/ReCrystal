@@ -22,7 +22,7 @@ Enter in the command line:
 
 1. Structure refinement with shelxL
 Before you use ReCrystal, refine your Crystal structure with shelxL and use the **Acta** command to create a CIF.
-Vibrations of Hydrogens should be treated isotropic. 
+Vibrations of Hydrogens should be treated isotropic. Each Atom should be named as follows: O001, O002, O003, etc.
 
 2. Start your refinement with ReCrystal.
 For the ReCrystal refinment you only need the CIF from the shelxL refinement. It should contain the HKLF4 and coordinates.
@@ -30,18 +30,18 @@ An exmaple how the CIF should look like is given in the Examples-Folder!
 
 Please ensure that all Programms are installed on the Computer (shelxL, Pcrystal, Pproperties, XD2006)
 
-3. Start **ReCrystal.py** as described with python 3 ("python3 ReCrystal.py")
+3. Start **ReCrystal.py** as described with python3 ("python3 ReCrystal.py")
 The Program will ask you for INPUT data!
 - Name of the CIF
 - Basis-Set for CRYSTAL calculation
-- DFT functional
+- DFT functional or CRYSTAL calculation
 - SHRINK factor
 - Maximum number of refinement cycles
 - Number of CPU 
 
-4. ReCrystal will perform the Refinement on its own. You do not have to do anything, BUT sometimes there are some issues...
+4. ReCrystal will perform the Refinement on its own. You do not have to do anything! 
 
-5. After refinement you can analyse all Files!
+5. After refinement you can analyse all Files! Check if the refinement was succesfull! You can use any tool that can be used to analyse XD charge density refinement results.
 
 Have FUN and GOOD LUCK for your refinement and charge density analysis!
 
