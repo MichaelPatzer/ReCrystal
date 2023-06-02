@@ -22,7 +22,7 @@ Enter in the command line:
 
 1. Structure refinement with shelxL:
 Before you use ReCrystal, refine your Crystal structure with shelxL and use the **Acta** command to create a CIF.
-Vibrations of Hydrogens should be treated isotropic. Each Atom should be named as follows: O001, O002, O003, etc.
+Vibrations of Hydrogens should be treated isotropic. Each atom should be named in a four-digit code (Example oxygen): O001, O002, O003, etc.
 
 2. Start your refinement with ReCrystal:
 For the ReCrystal refinment you only need the CIF from the shelxL refinement. It should contain the HKLF4 and coordinates.
