@@ -41,7 +41,7 @@ The Program will ask you for INPUT data!
 - Maximum number of refinement cycles
 - Number of CPU 
 
-4. ReCrystal will perform the Refinement on its own. You do not have to do anything! 
+4. ReCrystal will perform the Refinement on its own. You do not have to do anything! The hydrogen atoms are now treated anisotropically.
 
 5. After refinement you can analyse all Files! Check if the refinement was succesfull! You can use any tool that can be used to analyse XD charge density refinement results.
 
