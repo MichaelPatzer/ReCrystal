@@ -54,6 +54,7 @@ The refinement of a complete theoretical data set is demonstrated here (no syste
 The result of the ReCrystal refinement is the following structure model:
 
 <img width="724" alt="ReCrystal_result" src="https://github.com/MichaelPatzer/ReCrystal/assets/135106090/0d600afb-2159-4e21-9bad-0c6b63c8be77">
+
 Fig. 1: ORTEP of a fragment of calcium tartrate tetrahydrate - Ellipsoids on 50 % propability level.
 
 ## Step by step refinement
