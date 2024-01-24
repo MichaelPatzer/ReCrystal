@@ -47,7 +47,11 @@ The Program will ask you for INPUT data!
 
 Have FUN and GOOD LUCK for your refinement and charge density analysis!
 
-#. Example Calcium-Tartrat-Tetrahydrate
+# Example Calcium-Tartrat-Tetrahydrate
+
+The Refinement of a full theoretical data set is demonstrated here (no systematical errors).
+
+As a result the ReCrystal-Refinement gives us the following structure model:
 
 <img width="724" alt="ReCrystal_result" src="https://github.com/MichaelPatzer/ReCrystal/assets/135106090/0d600afb-2159-4e21-9bad-0c6b63c8be77">
 
