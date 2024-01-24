@@ -49,9 +49,13 @@ Have FUN and GOOD LUCK for your refinement and charge density analysis!
 
 # Example Calcium-Tartrat-Tetrahydrate
 
-The Refinement of a full theoretical data set is demonstrated here (no systematical errors).
+The refinement of a complete theoretical data set is demonstrated here (no systematic errors).
 
-As a result the ReCrystal-Refinement gives us the following structure model:
+The result of the ReCrystal refinement is the following structure model:
 
 <img width="724" alt="ReCrystal_result" src="https://github.com/MichaelPatzer/ReCrystal/assets/135106090/0d600afb-2159-4e21-9bad-0c6b63c8be77">
+Fig. 1: ORTEP of a fragment of calcium tartrate tetrahydrate - Ellipsoids on 50 % propability level.
 
+## Step by step refinement
+
+To obtain this refinement result, the structure must first be solved (e.g. shelxT). After the IAM refinement, ReCrystal could be used to refine the structure model shown in Figure 1.   
