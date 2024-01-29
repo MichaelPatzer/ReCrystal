@@ -84,7 +84,7 @@ MAXCYCLE\
 END
 
 No negative frequencies are obtained.
-After calculating the dynamic structure factor with CRYSTAL17, an HKLF4 was created with the output of Pproperties (with a separate Python script). 
+After calculating the dynamic structure factor with CRYSTAL17, an HKLF4 was created with the output of Pproperties (with a separate Python script - I/sigma(I) - Ratio arbitrarily set at 100). 
 The result of the ReCrystal refinement is the following structure model:
 
 <img width="724" alt="ReCrystal_result" src="https://github.com/MichaelPatzer/ReCrystal/assets/135106090/0d600afb-2159-4e21-9bad-0c6b63c8be77">
