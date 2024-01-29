@@ -55,8 +55,9 @@ The result of the ReCrystal refinement is the following structure model:
 
 <img width="724" alt="ReCrystal_result" src="https://github.com/MichaelPatzer/ReCrystal/assets/135106090/0d600afb-2159-4e21-9bad-0c6b63c8be77">
 
-Fig. 1: ORTEP of a fragment of calcium tartrate tetrahydrate - Ellipsoids on 50 % propability level.
+Fig. 1: ORTEP of a fragment of calcium tartrate tetrahydrate - Ellipsoids on 50 % propability level; after refinement with ReCrystal V3.3.
 
 ## Step by step refinement
 
-To obtain this refinement result, the structure must first be solved (e.g. shelxT). After the IAM refinement, ReCrystal could be used to refine the structure model shown in Figure 1.   
+To obtain this refinement result, the structure must first be solved (e.g. shelxT). After the IAM refinement, ReCrystal could be used to refine the structure model shown in Figure 1. 
+In the residual density one finds systematic undescribed electron density between atomic centres. In addition, Henn and Meindl's fractal analysis shows an asymmetric shape. 
