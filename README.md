@@ -101,7 +101,7 @@ In the residual density one finds systematic undescribed electron density betwee
 Fig. 2: Henn-Meindl-Plot after refinement with IAM/XD2006.
 
 The next step is to generate a CIF with shelxL and refine it again with ReCrystal using theoretical multipol parameters generated from synthetic structure factors from CRYSTAL17 (POB-TZVP/PBE).
-Notice that the residual density plot improves systematically (Maybe not a perfect description, but consider that the theoretical density from CRYSTAL17 is indirectly used with theoretical multipolar parameters using ReCrystal).
+Notice that the residual density plot improves systematically (Maybe not a perfect description, but consider that the theoretical density from CRYSTAL17 is indirectly used with theoretical multipolar parameters using XD2006/XD2016).
 
 <img width="755" alt="fractale_dimension" src="https://github.com/MichaelPatzer/ReCrystal/assets/135106090/8163723a-44cb-4433-8731-7d192fad04ae">
 
