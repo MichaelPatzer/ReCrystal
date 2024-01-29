@@ -49,8 +49,67 @@ Have FUN and GOOD LUCK for your refinement and charge density analysis!
 
 # Example Calcium-Tartrat-Tetrahydrate
 
-The refinement of a complete theoretical data set is demonstrated here (no systematic errors).
+The refinement of a complete theoretical data set is demonstrated here (no systematic errors). The synthetic dataset was generated using CRYSTAL17.
 
+OPT_FREQ
+CRYSTAL
+0 0 0
+ 19 
+9.15000000000  9.55000000000  10.49000000000
+ 27
+ 20     0.68668     0.68264     0.32358
+ 8     0.5555     0.4687     0.3298
+ 8     0.9866     0.2685     -9.70000000000031E-03
+ 8     0.837200000000001     0.4742     0.2879
+ 1     0.916     0.455     0.327
+ 8     0.5359     0.2412     0.2862
+ 8     0.7261     0.663     8.98999999999997E-02
+ 1     0.741     0.5744     6.64999999999997E-02
+ 1     0.6457     0.686     4.68999999999999E-02
+ 8     1.0496     0.2377     0.1943
+ 8     0.7271     0.3607     4.64999999999996E-02
+ 1     0.638     0.323     3.09999999999997E-02
+ 6     0.7721     0.3395     0.2756
+ 1     0.8146     0.2767     0.3395
+ 6     0.6072     0.3511     0.2988
+ 6     0.7981     0.2786     0.1439
+ 1     0.7542     0.185     0.1424
+ 8     0.689800000000001     0.9378     0.3343
+ 1     0.777200000000001     0.9659     0.347
+ 1     0.643000000000001     0.9649     0.4004
+ 6     0.9593     0.2627     0.1075
+ 8     1.0722     0.5837     7.66999999999997E-02
+ 1     1.037     0.564     3.99999999999953E-03
+ 1     0.998     0.606     0.122
+ 8     1.0726     0.4256     0.4365
+ 1     1.09     0.459     0.5101
+ 1     1.12     0.349     0.435
+FREQCALC
+PREOPTGEOM
+FULLOPTG
+MAXCYCLE
+300
+END
+INTENS
+ADP
+0 0
+TEMPERAT
+2 0 100
+END
+BASISSET
+POB-TZVP
+DFT
+PBE
+END
+SHRINK
+8 8
+TOLDEE
+9
+MAXCYCLE
+200
+END
+
+After calculating the dynamic structure factor with CRYSTAL17, an HKLF4 was created with the output of Pproperties. 
 The result of the ReCrystal refinement is the following structure model:
 
 <img width="724" alt="ReCrystal_result" src="https://github.com/MichaelPatzer/ReCrystal/assets/135106090/0d600afb-2159-4e21-9bad-0c6b63c8be77">
