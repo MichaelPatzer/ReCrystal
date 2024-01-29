@@ -52,9 +52,9 @@ Have FUN and GOOD LUCK for your refinement and charge density analysis!
 The refinement of a complete theoretical data set is demonstrated here (no systematic errors). The synthetic dataset was generated using CRYSTAL17.
 
 OPT_FREQ \
-CRYSTAL
-0 0 0
- 19 
+CRYSTAL\
+0 0 0\
+ 19 \
 9.15000000000  9.55000000000  10.49000000000
  27
  20     0.68668     0.68264     0.32358
