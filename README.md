@@ -57,7 +57,7 @@ CRYSTAL\
  19 \
 9.15000000000  9.55000000000  10.49000000000\
  27\
-... (Coordinates, see example file) ...
+... (Coordinates, see example file) ...\
 FREQCALC\
 PREOPTGEOM\
 FULLOPTG\
