@@ -13,7 +13,7 @@ ReCrystal allows you to iteratively refine a crystallographic data set from a si
 ## SOP - Standard Operating Procedure
 Enter in the command line:
 
-"python3 ReCrystal.py"
+**python3 ReCrystal.py**
 
 Due to the computational cost of the Crystal calculation, it is possible to use an input.txt file that contains all the necessary information for ReCrystal (see Examples):
 
