@@ -1,4 +1,4 @@
-**Due to the publication in a scientific journal, a new version will be online shortly. This version should be applicable to all. The modification of ReCrystal to XD2024 is planned so that a broader spectrum of molecular crystals can be refined.**
+**Due to the publication in IUCrJ, a new version will be online shortly. This version should be applicable to all. The modification of ReCrystal to XD2024 is planned so that a broader spectrum of molecular crystals can be refined.**
 
 Further details can be found in my dissertation and please cite if used: https://doi.org/10.25926/BUW/0-168
 
