@@ -19,7 +19,7 @@ Due to the computational cost of the Crystal calculation, it is possible to use 
 
 **python3 ReCrystal.py < input.txt >& Out.txt &**
 
-*You will need some additional Programs for ReCrystal.py*
+Some additional programs are required for ReCrystal.py
 1. python3 (https://www.python.org/downloads/)
 2. CRYSTAL17 Program Pcrystal and Pproperties (https://www.crystal.unito.it/)
 3. ShelxL (https://shelx.uni-goettingen.de/index.php)
