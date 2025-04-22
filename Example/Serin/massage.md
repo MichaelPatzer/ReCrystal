@@ -1,6 +1,6 @@
 Refinement for D/L-Serine using ReCrystal0.8/def2-TZVP/PBE
 
-To run the ReCrystal routine following command has to be written:
+The following command must be executed to start the ReCrystal routine:
 
 **python3 ReCrystal.py < input.txt >& Out.txt &**
 
