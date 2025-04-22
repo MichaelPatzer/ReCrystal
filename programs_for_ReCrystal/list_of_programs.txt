@@ -1,0 +1,6 @@
+Here is a list of programs that will help and are needed to analyse the results:
+
+molecoolqt
+shelxl  
+xd  xdcif  xdfft  xdfour  xdgeom  xdgraph  xdhkl  xdini  xdkeyinfo  xdlsm  xdlspar  xdpdf  xdprop  xdvib1  xdvib2  xdwtan
+winxd
