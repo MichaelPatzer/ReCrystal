@@ -5,11 +5,7 @@
 #
 # arg1      -- name of input file without .d12
 #
-# Author:  Colinet Pauline BUT completely copied and slightly adapted from suborca v9 routine
-#          Max-Planck-Institut fuer Kolhenforschung, D-45470 Muelheim, Germany
-#
-# Date:    2023-03-16
-#
+
 
 use Getopt::Std;
 use Cwd 'abs_path';
