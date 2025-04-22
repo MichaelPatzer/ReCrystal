@@ -17,7 +17,7 @@
 
 
                   Other programs are used in this routine: 
-                        XD2016, shelxL for refinement 
+                        XD2006, shelxL for refinement 
                                & Crystal17
              for calculation of theoretical mutlipole parameters
 
