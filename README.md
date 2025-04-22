@@ -1,5 +1,7 @@
 **Due to the publication in IUCrJ, a new version will be online shortly. This version should be applicable to all. The modification of ReCrystal to XD2024 is planned so that a broader spectrum of molecular crystals can be refined.**
 
+https://journals.iucr.org/m/issues/2025/03/00/fc5082/index.html
+
 Further details can be found in my dissertation and please cite if used: https://doi.org/10.25926/BUW/0-168
 
 # ReCrystal: a tool for quantum crystallographic refinement
