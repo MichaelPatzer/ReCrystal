@@ -15,6 +15,10 @@ Enter in the command line:
 
 "python3 ReCrystal.py"
 
+Due to the computational cost of the Crystal calculation, it is possible to use an input.txt file that contains all the necessary information for ReCrystal (see Examples):
+
+**python3 ReCrystal.py < input.txt >& Out.txt &**
+
 *You will need some additional Programs for ReCrystal.py*
 1. python3 (https://www.python.org/downloads/)
 2. CRYSTAL17 Program Pcrystal and Pproperties (https://www.crystal.unito.it/)
