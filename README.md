@@ -5,7 +5,7 @@ Further details can be found in my dissertation and please cite if used: https:/
 # ReCrystal: a tool for quantum crystallographic refinement
 ReCrystal allows you to iteratively refine a crystallographic data set from a single crystal X-ray diffraction pattern with multipolar parameters that have been derived from a CRYSTAL17 calculation under periodic boundary conditions. The programme coordinates the whole process while the underlying computation and refinement is done with already established programmes (CRYSTAL17 and XD2006). ReCrystal automatically generates input data, controls the convergence and writes out the key results.  
 
-## *Re*finement with *CRYSTAL*17: ReCrystal
+## Refinement with CRYSTAL17: ReCrystal
 - Software development under **LINUX**
 - software language 100 % python3
 - it is possible to run CRYSTAL17 on a cluster to speed up refinement as well as on the same computer
