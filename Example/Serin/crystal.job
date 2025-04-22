@@ -1,0 +1,60 @@
+#!/usr/bin/zsh
+#SBATCH --ntasks=32
+#SBATCH --cpus-per-task=1
+#SBATCH --job-name=crystal
+#SBATCH --partition=ep29th
+#SBATCH --mem-per-cpu=2048MB
+#SBATCH --no-requeue
+#SBATCH --nodes=1
+
+export TMPDIR=/usr/scratch/tmp
+export PATH=/hsnfs/software/openmpi-2.1.0/bin:/hsnfs/software/crystal17-1.0.2:$PATH
+export LD_LIBRARY_PATH=/hsnfs/software/openmpi-2.1.0/lib:$LD_LIBRARY_PATH
+export WDIR=$PWD
+
+ulimit -u 8191
+ulimit -c 0
+ulimit -s unlimited
+
+
+logfile=$WDIR/crystal.out
+tdir=/usr/scratch/patzer/crystal__$SLURM_JOB_ID
+
+n=$SLURM_JOB_NODELIST
+n=${n:gs/\[/\{\{/:gs/\]/\}\}/:gs/-/../:gs/,/\},\{/}
+nl=$(eval print ${n} )
+nodelist=(${=nl:gs/\{//:gs/\}//})
+
+mkdir -p $tdir
+exitmkdir=$?
+if [[ ( $exitmkdir != 0 ) ]]; then
+  echo "Unable to create target directory! Aborting job start....."
+  exit 1
+fi
+
+
+cp $WDIR/crystal.d3 $tdir/INPUT
+cp $WDIR/fort.9 $tdir/.    
+if [[ -e $WDIR/crystal.gui ]]; then
+  cp $WDIR/crystal.gui $tdir/fort.34
+fi
+
+
+cd $tdir
+
+echo "$PATH" > $logfile
+echo "$LD_LIBRARY_PATH" >> $logfile
+echo "Job started from ${SLURM_SUBMIT_HOST}, running crystal17 on $(hostname) in $tdir ($SHELL)" >> $logfile
+echo "Job execution start: $(date)" >> $logfile
+echo "SLURM Job ID is: $SLURM_JOB_ID" >> $logfile
+echo "SLURM_JOB_NODELIST: $SLURM_JOB_NODELIST" >> $logfile
+echo "Maxcore enforced by SLURM: 2048 MB" >> $logfile
+echo "Expanded nodelist (${#nodelist} nodes):" >> $logfile
+
+foreach node ( $nodelist ) { echo $node >> $logfile }
+=mpirun -np 32 Pproperties INPUT >>& $logfile < /dev/null
+
+cp $tdir/INPUT $tdir/fort.34 $tdir/fort.33 $tdir/*.LOG $tdir/*.DAT $WDIR/
+
+rm -rf $tdir
+

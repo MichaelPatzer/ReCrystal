@@ -1,0 +1,153 @@
+#!/usr/bin/perl
+# SUBCRY17
+#
+# Submit a crsytal 17 job to an PBS batch queue.
+#
+# arg1      -- name of input file without .d12
+#
+# Author:  Colinet Pauline BUT completely copied and slightly adapted from suborca v9 routine
+#          Max-Planck-Institut fuer Kolhenforschung, D-45470 Muelheim, Germany
+#
+# Date:    2023-03-16
+#
+
+use Getopt::Std;
+use Cwd 'abs_path';
+
+
+getopts(':q:n:m', \%opts );
+
+$CRYPATH="/hsnfs/software/crystal17-1.0.2";
+$MPIPATH="/hsnfs/software/openmpi-2.1.0/bin";
+$MPILIB="/hsnfs/software/openmpi-2.1.0/lib";
+
+$QUEUE="xe30th";
+$MAXCORE=2048;
+$numprocesses=16;
+
+if ( $#ARGV+1 == 0 ) {
+  print "\n";
+  print "Usage: subcry17 -n cores [-q queue] [-m mem ] <inputfile>\n";
+  print " [-q queue] : Select different queue (default: xe301th)\n";
+  print " [-n procs] : Number of cores to be reserved\n";
+  print " [-m mem]   : Memory per process/core\n";
+  print "\n";
+  exit(1);
+}
+
+$jobname = $ARGV[0];                                               #First command line argument is the job name
+
+if ( $opts{q} ) {
+  $QUEUE=$opts{q};
+}
+if ( $opts{n} ) {
+  $numprocesses=$opts{n};
+}
+if ( $opts{m} ) {
+  $MAXCORE=$opts{m};
+}
+
+
+$CRYPATH=abs_path($CRYPATH);
+
+# Now checking for / in filenames.... one really should not do THIS....
+if ( $jobname =~ /\// ) {
+  print "Your filename should not contain subdirectories!!!!!\n";
+  print "Please go to the target directory and start subcry17 there!\n";
+  exit(1);
+}
+
+
+$MEMORY="\#SBATCH --mem-per-cpu=${MAXCORE}MB";
+
+
+# ---------------------------------------------------------------------------------------------------------------------------------------
+#
+# Get the current working directory
+#
+  $dir  = $ENV{'PWD'};
+  $user = $ENV{'USER'};
+
+# ---------------------------------------------------------------------------------------------------------------------------------------
+#
+#  Set name of outputfile (for serial or parallel jobs)
+#
+  $errfile="${jobname}.err";
+  $outfile="${jobname}.out";
+
+# ---------------------------------------------------------------------------------------------------------------------------------------
+#
+# Generate job script, requesting zsh for execution
+#
+
+open(OUT,">$jobname.job");
+print OUT <<EOF;
+#!/usr/bin/zsh
+#SBATCH --ntasks=$numprocesses
+#SBATCH --cpus-per-task=1
+#SBATCH --job-name=$jobname
+#SBATCH --partition=$QUEUE
+$MEMORY
+#SBATCH --no-requeue
+#SBATCH --nodes=1
+
+export TMPDIR=/usr/scratch/tmp
+export PATH=$MPIPATH:$CRYPATH:\$PATH
+export LD_LIBRARY_PATH=$MPILIB:\$LD_LIBRARY_PATH
+export WDIR=\$PWD
+
+ulimit -u 8191
+ulimit -c 0
+ulimit -s unlimited
+
+
+logfile=\$WDIR/$outfile
+tdir=/usr/scratch/$user/${jobname}__\$SLURM_JOB_ID
+
+n=\$SLURM_JOB_NODELIST
+n=\${n:gs/\\[/\\{\\{/:gs/\\]/\\}\\}/:gs/-/../:gs/,/\\},\\{/}
+nl=\$(eval print \${n} )
+nodelist=(\${=nl:gs/\\{//:gs/\\}//})
+
+mkdir -p \$tdir
+exitmkdir=\$?
+if [[ ( \$exitmkdir != 0 ) ]]; then
+  echo "Unable to create target directory! Aborting job start....."
+  exit 1
+fi
+
+
+cp \$WDIR/${jobname}.d12 \$tdir/INPUT
+if [[ -e \$WDIR/${jobname}.gui ]]; then
+  cp \$WDIR/${jobname}.gui \$tdir/fort.34
+fi
+
+
+cd \$tdir
+
+echo "\$PATH" > \$logfile
+echo "\$LD_LIBRARY_PATH" >> \$logfile
+echo "Job started from \${SLURM_SUBMIT_HOST}, running crystal17 on \$(hostname) in \$tdir (\$SHELL)" >> \$logfile
+echo "Job execution start: \$(date)" >> \$logfile
+echo "SLURM Job ID is: \$SLURM_JOB_ID" >> \$logfile
+echo "SLURM_JOB_NODELIST: \$SLURM_JOB_NODELIST" >> \$logfile
+echo "Maxcore enforced by SLURM: ${MAXCORE} MB" >> \$logfile
+echo "Expanded nodelist (\${#nodelist} nodes):" >> \$logfile
+
+foreach node ( \$nodelist ) { echo \$node >> \$logfile }
+=mpirun -np $numprocesses Pcrystal INPUT >>& \$logfile < /dev/null
+
+cp \$tdir/INPUT \$tdir/fort.34 \$tdir/fort.33 \$tdir/*.LOG \$tdir/*.DAT \$WDIR/
+cp \$tdir/fort.9 \$WDIR/.
+
+rm -rf \$tdir
+
+EOF
+close(OUT);
+
+#
+# Now submit it to the PBS queue batch
+#
+
+system("sbatch -W --output $dir/$errfile ${jobname}.job");
+

@@ -1,0 +1,7 @@
+Serin.cif
+def2-TZVP
+PBE
+8 8
+32
+ep29th
+10
