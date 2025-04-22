@@ -20,7 +20,7 @@ Enter in the command line:
 2. CRYSTAL17 Program Pcrystal and Pproperties (https://www.crystal.unito.it/)
 3. ShelxL (https://shelx.uni-goettingen.de/index.php)
 4. XD2006 (https://www.chem.gla.ac.uk/~louis/xd-home/download.html)
-5. If you run CRYSTAL17 on a HPC, you may need subcry17 and subprop17 (see folder sub_scripts)
+5. If you run CRYSTAL17 on a HPC, you may need subcry17 and subprop17 (see folder *sub_script*)
 
 ### The refining process
 
