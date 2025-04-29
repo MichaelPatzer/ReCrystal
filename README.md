@@ -42,6 +42,8 @@ https://journals.iucr.org/m/issues/2025/03/00/fc5082/index.html
 
 Further details can be found in my dissertation and please cite if used: https://doi.org/10.25926/BUW/0-168
 
+# SOP - Standard Operating Procedure
+
 ## A tool for quantum crystallographic refinement
 ReCrystal allows you to iteratively refine a crystallographic data set from a single crystal X-ray diffraction pattern with multipolar parameters that have been derived from a CRYSTAL17 calculation under periodic boundary conditions. The programme coordinates the whole process while the underlying computation and refinement is done with already established programmes (CRYSTAL17 and XD2006). ReCrystal automatically generates input data, controls the convergence and writes out the key results.  
 
@@ -50,7 +52,7 @@ ReCrystal allows you to iteratively refine a crystallographic data set from a si
 - software language 100 % python3
 - it is possible to run CRYSTAL17 on a cluster to speed up refinement as well as on the same computer
 
-## SOP - Standard Operating Procedure
+## How to run
 Enter in the command line:
 
 **python3 ReCrystal.py**
@@ -65,6 +67,10 @@ Some additional programs are required for ReCrystal.py
 3. ShelxL (https://shelx.uni-goettingen.de/index.php)
 4. XD2006 (https://www.chem.gla.ac.uk/~louis/xd-home/download.html)
 5. If you run CRYSTAL17 on a HPC, you may need subcry17 and subprop17 (see folder *sub_script*)
+
+## Path where you should store the executable files
+
+... update shortly ...
 
 ### The refining process
 
