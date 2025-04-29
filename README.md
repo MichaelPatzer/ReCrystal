@@ -1,4 +1,24 @@
-**Due to the publication in IUCrJ, a new version will be online shortly. This version should be applicable to all. The modification of ReCrystal to XD2024 is planned so that a broader spectrum of molecular crystals can be refined.**
+## ✨Neue Features in der aktuellen Version (2025)
+✅ **Kompatibilität mit XD2024**
+ReCrystal ist nun vollständig kompatibel mit XD2024.
+
+Profitiert von den neuen Optimierungen, Features und Bugfixes der aktuellen XD-Version.
+
+✅ **Erweiterte Strukturdimension**
+Die Beschränkung auf max. 30 Atome in der asymmetrischen Einheit wurde aufgehoben.
+
+Jetzt auch geeignet für größere Moleküle, metallorganische Cluster und supramolekulare Systeme.
+
+✅ **Optimierter Refinement-Zyklus**
+Verbesserter Ablauf der Iterationen:
+
+Wellenfunktionsaktualisierung mit CRYSTAL
+
+theoretische Formfaktorberechnung
+
+Multipolverfeinerung mit XD2024
+
+Konvergenzprüfung (optional automatisiert)
 
 https://journals.iucr.org/m/issues/2025/03/00/fc5082/index.html
 
