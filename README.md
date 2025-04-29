@@ -1,3 +1,9 @@
+## 🧪 ReCrystal — Quantum Crystallographic Refinement with XD2024 Support
+by Michael Patzer
+
+## 🔍 Was ist ReCrystal?
+ReCrystal ist ein Python-basiertes Tool zur quantenkristallographischen Verfeinerung auf Basis von periodischen DFT-Wellenfunktionen. Das Programm kombiniert CRYSTAL17/23-Berechnungen mit der Multipolverfeinerung via XD2024 und ermöglicht eine realistische Beschreibung der Elektronendichte in molekularen Festkörpern.
+
 ## ✨Neue Features in der aktuellen Version (2025)
 ✅ **Kompatibilität mit XD2024**
 ReCrystal ist nun vollständig kompatibel mit XD2024.
