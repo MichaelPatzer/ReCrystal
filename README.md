@@ -1,4 +1,4 @@
-## 🧪 ReCrystal — Quantum Crystallographic Refinement with XD2024 Support
+# 🧪 ReCrystal — Quantum Crystallographic Refinement with XD2024 Support
 by Michael Patzer
 
 ## 🔍 About ReCrystal?
@@ -39,7 +39,7 @@ https://journals.iucr.org/m/issues/2025/03/00/fc5082/index.html
 
 Further details can be found in my dissertation and please cite if used: https://doi.org/10.25926/BUW/0-168
 
-# ReCrystal: a tool for quantum crystallographic refinement
+## A tool for quantum crystallographic refinement
 ReCrystal allows you to iteratively refine a crystallographic data set from a single crystal X-ray diffraction pattern with multipolar parameters that have been derived from a CRYSTAL17 calculation under periodic boundary conditions. The programme coordinates the whole process while the underlying computation and refinement is done with already established programmes (CRYSTAL17 and XD2006). ReCrystal automatically generates input data, controls the convergence and writes out the key results.  
 
 ## Refinement with CRYSTAL17: ReCrystal
