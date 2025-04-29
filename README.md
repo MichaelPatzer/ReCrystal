@@ -20,6 +20,15 @@ Multipolverfeinerung mit XD2024
 
 Konvergenzprüfung (optional automatisiert)
 
+## 🧠 Anwendungsmöglichkeiten
+Untersuchung schwacher Wechselwirkungen (z. B. H-Brücken, π-π)
+
+Quantitative Elektronendichteanalysen
+
+Kristallstrukturanalyse funktionaler Moleküle und Cluster
+
+Hybridverfeinerung mit experimentellen und theoretischen Daten
+
 https://journals.iucr.org/m/issues/2025/03/00/fc5082/index.html
 
 Further details can be found in my dissertation and please cite if used: https://doi.org/10.25926/BUW/0-168
