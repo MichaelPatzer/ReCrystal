@@ -1,39 +1,39 @@
 ## 🧪 ReCrystal — Quantum Crystallographic Refinement with XD2024 Support
 by Michael Patzer
 
-## 🔍 Was ist ReCrystal?
-ReCrystal ist ein Python-basiertes Tool zur quantenkristallographischen Verfeinerung auf Basis von periodischen DFT-Wellenfunktionen. Das Programm kombiniert CRYSTAL17/23-Berechnungen mit der Multipolverfeinerung via XD2024 und ermöglicht eine realistische Beschreibung der Elektronendichte in molekularen Festkörpern.
+## 🔍 About ReCrystal?
+ReCrystal is a Python-based tool for quantum crystallographic refinement based on periodic DFT wave functions. The program combines CRYSTAL17/23 calculations with multipole refinement via XD2024 and enables a realistic description of the electron density in molecular solids.
 
-## ✨Neue Features in der aktuellen Version (2025)
-✅ **Kompatibilität mit XD2024**
-ReCrystal ist nun vollständig kompatibel mit XD2024.
+## ✨New features in the current version (2025)
+✅ **Compatibility with XD2024**
+ReCrystal is now compatible with xdlsm XD2024.
 
-Profitiert von den neuen Optimierungen, Features und Bugfixes der aktuellen XD-Version.
+Benefit from the new optimizations, features and bug fixes of the current XD version.
 
-✅ **Erweiterte Strukturdimension**
-Die Beschränkung auf max. 30 Atome in der asymmetrischen Einheit wurde aufgehoben.
+✅ **Extended structural dimension**
+The restriction to max. 30 atoms in the asymmetric unit has been lifted.
 
-Jetzt auch geeignet für größere Moleküle, metallorganische Cluster und supramolekulare Systeme.
+Now also suitable for larger molecules, organometallic clusters and supramolecular systems.
 
-✅ **Optimierter Refinement-Zyklus**
-Verbesserter Ablauf der Iterationen:
+✅ **Optimized refinement cycle**
+Improved iteration process:
 
-Wellenfunktionsaktualisierung mit CRYSTAL
+Wave function update with CRYSTAL
 
-theoretische Formfaktorberechnung
+Theoretical form factor calculation
 
-Multipolverfeinerung mit XD2024
+Multipole refinement with XD2024
 
-Konvergenzprüfung (optional automatisiert)
+Convergence check (optionally automated)
 
-## 🧠 Anwendungsmöglichkeiten
-Untersuchung schwacher Wechselwirkungen (z. B. H-Brücken, π-π)
+## 🧠 Possible applications
+Investigation of weak interactions (e.g. H-bridges, π-π)
 
-Quantitative Elektronendichteanalysen
+Quantitative electron density analyses
 
-Kristallstrukturanalyse funktionaler Moleküle und Cluster
+Crystal structure analysis of functional molecules and clusters
 
-Hybridverfeinerung mit experimentellen und theoretischen Daten
+Hybrid refinement with experimental and theoretical data
 
 https://journals.iucr.org/m/issues/2025/03/00/fc5082/index.html
 
