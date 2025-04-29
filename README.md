@@ -35,6 +35,8 @@ Crystal structure analysis of functional molecules and clusters
 
 Hybrid refinement with experimental and theoretical data
 
+Improved determination of the positions of the hydrogen atoms compared to the IAM
+
 **the minor issue**
 the minor technical problem is that the CRYSTAL calculation is started differently on the respective cluster environment. For this reason, it will be necessary to adapt the code individually so that a routine application is possible.
 
