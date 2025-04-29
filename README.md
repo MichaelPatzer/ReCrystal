@@ -13,7 +13,7 @@ Benefit from the new optimizations, features and bug fixes of the current XD ver
 ✅ **Extended structural dimension**
 The restriction to max. 30 atoms in the asymmetric unit has been lifted.
 
-Now also suitable for larger molecules, organometallic clusters and supramolecular systems.
+Now also suitable for larger molecules and supramolecular systems.
 
 ✅ **Optimized refinement cycle**
 Improved iteration process:
