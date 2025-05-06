@@ -5,6 +5,8 @@ by Michael Patzer
 ReCrystal is a Python-based tool for quantum crystallographic refinement based on periodic DFT wave functions. The program combines CRYSTAL17/23 calculations with multipole refinement via XD2024 and enables a realistic description of the electron density in molecular solids.
 
 ## ✨New features in the current version (2025)
+--> upload in few days
+
 ✅ **Compatibility with XD2024**
 ReCrystal is now compatible with xdlsm XD2024.
 
