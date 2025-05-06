@@ -103,64 +103,6 @@ The Program will ask you for INPUT data!
 
 Have FUN and GOOD LUCK for your refinement and charge density analysis!
 
-# Example Calcium-Tartrat-Tetrahydrate
 
-The refinement of a complete theoretical data set is demonstrated here (no systematic errors). The synthetic dataset was generated using CRYSTAL17.
-
-OPT_FREQ \
-CRYSTAL\
-0 0 0\
- 19 \
-9.15000000000  9.55000000000  10.49000000000\
- 27\
-... (Coordinates, see example file) ...\
-FREQCALC\
-PREOPTGEOM\
-FULLOPTG\
-MAXCYCLE\
-300\
-END\
-INTENS\
-ADP\
-0 0\
-TEMPERAT\
-2 0 100\
-END\
-BASISSET\
-POB-TZVP\
-DFT\
-PBE\
-END\
-SHRINK\
-8 8\
-TOLDEE\
-9\
-MAXCYCLE\
-200\
-END
-
-No negative frequencies are obtained.
-After calculating the dynamic structure factor with CRYSTAL17, an HKLF4 was created with the output of Pproperties (with a separate Python script - I/sigma(I) - Ratio arbitrarily set at 100). 
-The result of the ReCrystal refinement is the following structure model:
-
-<img width="724" alt="ReCrystal_result" src="https://github.com/MichaelPatzer/ReCrystal/assets/135106090/0d600afb-2159-4e21-9bad-0c6b63c8be77">
-
-Fig. 1: ORTEP of a fragment of calcium tartrate tetrahydrate - Ellipsoids on 50 % propability level; after refinement with ReCrystal V3.3.
-
-## Step by step refinement
-
-To obtain this refinement result, the structure must first be solved (e.g. shelxT). After the IAM refinement, ReCrystal could be used to refine the structure model shown in Figure 1. 
-In the residual density one finds systematic undescribed electron density between atomic centres. In addition, Henn and Meindl's fractal analysis shows an asymmetric shape. 
-
-<img width="768" alt="Fractal_analysis" src="https://github.com/MichaelPatzer/ReCrystal/assets/135106090/565836be-0b5a-4839-820e-ea5a446159c2">
-
-Fig. 2: Henn-Meindl-Plot after refinement with IAM/XD2006.
-
-The next step is to generate a CIF with shelxL and refine it again with ReCrystal using theoretical multipol parameters generated from synthetic structure factors from CRYSTAL17 (POB-TZVP/PBE).
-Notice that the residual density plot improves systematically (Maybe not a perfect description, but consider that the theoretical density from CRYSTAL17 is indirectly used with theoretical multipolar parameters using XD2006/XD2016).
-
-<img width="755" alt="fractale_dimension" src="https://github.com/MichaelPatzer/ReCrystal/assets/135106090/8163723a-44cb-4433-8731-7d192fad04ae">
-
-Fig. 3: Henn-Meindl-Plot after refinement with ReCrystal (Multipole-Model/XD2006/CRYSTAL17).
 
 
