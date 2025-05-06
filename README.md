@@ -10,6 +10,8 @@ ReCrystal is a Python-based tool for quantum crystallographic refinement based o
 ✅ **Compatibility with XD2024**
 ReCrystal is now compatible with xdlsm XD2024.
 
+The handling of atoms in special positions is possible with XDSPOS; implemented in the new ReCrystal version.
+
 Benefit from the new optimizations, features and bug fixes of the current XD version.
 
 ✅ **Extended structural dimension**
