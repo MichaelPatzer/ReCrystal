@@ -28,7 +28,7 @@ Theoretical form factor calculation
 
 Multipole refinement with XD2024
 
-Convergence check (optionally automated)
+Automated convergence check 
 
 ## 🧠 Possible applications
 Investigation of weak interactions (e.g. H-bridges, π-π)
