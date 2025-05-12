@@ -1,4 +1,4 @@
-# 🧪 ReCrystal — Quantum Crystallographic Refinement with XD2024 Support
+# 🧪 ReCrystal — Quantum Crystallographic Refinement with XD2024
 by Michael Patzer
 
 ## 🔍 About ReCrystal?
