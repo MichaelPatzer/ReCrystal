@@ -1,3 +1,9 @@
+ReCrystal is published:
+
+https://journals.iucr.org/m/issues/2025/03/00/fc5082/index.html
+
+Further details can be found in my dissertation and please cite if used: https://doi.org/10.25926/BUW/0-168
+
 # 🧪 ReCrystal — Quantum Crystallographic Refinement with XD2024
 by Michael Patzer
 
@@ -40,10 +46,6 @@ Improved determination of the positions of the hydrogen atoms compared to the IA
 
 **the minor issue**
 the minor technical problem is that the CRYSTAL calculation is started differently on the respective cluster environment. For this reason, it will be necessary to adapt the code individually so that a routine application is possible.
-
-https://journals.iucr.org/m/issues/2025/03/00/fc5082/index.html
-
-Further details can be found in my dissertation and please cite if used: https://doi.org/10.25926/BUW/0-168
 
 # SOP - Standard Operating Procedure
 
