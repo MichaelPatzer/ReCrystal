@@ -21,7 +21,7 @@ ReCrystal is now compatible with xdlsm XD2024.
 ✅ **Extended structural dimension**
 The restriction to max. 30 atoms in the asymmetric unit has been lifted.
 
-Now also suitable for larger molecules and supramolecular systems.
+- Now also suitable for larger molecules and supramolecular systems.
 
 ✅ **Optimized refinement cycle**
 - Improved iteration process:
