@@ -1,5 +1,6 @@
-ReCrystal is published:
+## ReCrystal is published
 
+IUCrJ (2025). 12, 322–333
 https://journals.iucr.org/m/issues/2025/03/00/fc5082/index.html
 
 Further details can be found in my dissertation and please cite if used: https://doi.org/10.25926/BUW/0-168
