@@ -16,7 +16,7 @@ ReCrystal is a Python-based tool for quantum crystallographic refinement based o
 ✅ **Compatibility with XD2024**
 ReCrystal is now compatible with xdlsm XD2024.
 
-Benefit from the new optimizations, features and bug fixes of the current XD version.
+- Benefit from the new optimizations, features and bug fixes of the current XD version.
 
 ✅ **Extended structural dimension**
 The restriction to max. 30 atoms in the asymmetric unit has been lifted.
@@ -24,26 +24,26 @@ The restriction to max. 30 atoms in the asymmetric unit has been lifted.
 Now also suitable for larger molecules and supramolecular systems.
 
 ✅ **Optimized refinement cycle**
-Improved iteration process:
+- Improved iteration process:
 
-Wave function update with CRYSTAL
+- Wave function update with CRYSTAL
 
-Theoretical form factor calculation
+- Theoretical form factor calculation
 
-Multipole refinement with XD2024
+- Multipole refinement with XD2024
 
-Automated convergence check 
+- Automated convergence check 
 
 ## 🧠 Possible applications
-Investigation of weak interactions (e.g. H-bridges, π-π)
+- Investigation of weak interactions (e.g. H-bridges, π-π)
 
-Quantitative electron density analyses
+- Quantitative electron density analyses
 
-Crystal structure analysis of functional molecules and clusters
+- Crystal structure analysis of functional molecules and clusters
 
-Hybrid refinement with experimental and theoretical data
+- Hybrid refinement with experimental and theoretical data
 
-Improved determination of the positions of the hydrogen atoms compared to the IAM
+- Improved determination of the positions of the hydrogen atoms compared to the IAM
 
 **the minor issue**
 the minor technical problem is that the CRYSTAL calculation is started differently on the respective cluster environment. For this reason, it will be necessary to adapt the code individually so that a routine application is possible.
