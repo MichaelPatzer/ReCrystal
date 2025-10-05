@@ -19,7 +19,7 @@ ReCrystal is now compatible with xdlsm XD2024.
 - Benefit from the new optimizations, features and bug fixes of the current XD version.
 
 ✅ **GUI in progress** 
-
+GUI_goddard2.PNG
 
 ✅ **Extended structural dimension**
 The restriction to max. 30 atoms in the asymmetric unit has been lifted.
