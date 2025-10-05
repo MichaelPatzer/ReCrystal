@@ -50,6 +50,7 @@ The restriction to max. 30 atoms in the asymmetric unit has been lifted.
 
 **the minor issue**
 the minor technical problem is that the CRYSTAL calculation is started differently on the respective cluster environment. For this reason, it will be necessary to adapt the code individually so that a routine application is possible.
+Write me an e-mail and we can address your project: patzer@mpi-muelheim.mpg.de 
 
 # SOP - Standard Operating Procedure
 
